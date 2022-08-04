@@ -3,9 +3,15 @@
 #include <string.h>
 #include <omp.h>
 
+#ifndef min
+#define min( a, b ) ( ((a) < (b)) ? (a) : (b) )
+#endif
+
 #ifndef max
 #define max( a, b ) ( ((a) > (b)) ? (a) : (b) )
 #endif
+
+#define BATCH_SIZE 100
 
 typedef unsigned short mtype;
 
@@ -78,25 +84,41 @@ void initScoreMatrix(mtype ** scoreMatrix, int sizeA, int sizeB) {
 }
 
 int LCS(mtype ** scoreMatrix, int sizeA, int sizeB, char * seqA, char *seqB) {
+	
 	int i, j;
-	for (i = 1; i < sizeB + 1; i++) {
-		for (j = 1; j < sizeA + 1; j++) {
-			if (seqA[j - 1] == seqB[i - 1]) {
-				/* if elements in both sequences match,
-				 the corresponding score will be the score from
-				 previous elements + 1*/
-				scoreMatrix[i][j] = scoreMatrix[i - 1][j - 1] + 1;
-			} else {
-				/* else, pick the maximum value (score) from left and upper elements*/
-				scoreMatrix[i][j] =
-						max(scoreMatrix[i-1][j], scoreMatrix[i][j-1]);
-			}
+
+	for(i = 2; i <= sizeA;i++){	//i-esima contra-diagonal
+		#pragma omp parallel for
+		for(j = 1; j < min(i,sizeB);j++){
+			int row  = j;
+			int collumn = i - j;
+
+			if(seqA[collumn - 1] == seqB[row - 1])
+				scoreMatrix[row][collumn] = scoreMatrix[row - 1][collumn - 1] + 1;
+			else
+				scoreMatrix[row][collumn] =
+						max(scoreMatrix[row - 1][collumn], scoreMatrix[row][collumn - 1]);
 		}
 	}
+
+	//diagonais que não passam no lado superior da matriz
+	for(i = 1; i <= sizeB; i++){
+		#pragma omp parallel for
+		for(j = i; j < min(sizeB + 1,sizeA + i);j++){
+			int row = j;
+			int collumn = sizeA + i - j;
+
+			if(seqA[collumn -1] == seqB[row - 1])
+				scoreMatrix[row][collumn] = scoreMatrix[row - 1][collumn - 1] + 1;
+			else
+				scoreMatrix[row][collumn] =
+						max(scoreMatrix[row - 1][collumn], scoreMatrix[row][collumn -1]);
+		}
+	}
+
 	return scoreMatrix[sizeB][sizeA];
 }
-void printMatrix(char * seqA, char * seqB, mtype ** scoreMatrix, int sizeA,
-		int sizeB) {
+void printMatrix(char * seqA, char * seqB, mtype ** scoreMatrix, int sizeA,int sizeB) {
 	int i, j;
 
 	//print header
@@ -138,7 +160,6 @@ int main(int argc, char ** argv) {
 	// sizes of both sequences
 	int sizeA, sizeB;
 	double time = omp_get_wtime();
-
 	//read both sequences
 	seqA = read_seq("fileA.in");
 	seqB = read_seq("fileB.in");
@@ -156,17 +177,18 @@ int main(int argc, char ** argv) {
 	//fill up the rest of the matrix and return final score (element locate at the last line and collumn)
 	mtype score = LCS(scoreMatrix, sizeA, sizeB, seqA, seqB);
 
+
 	/* if you wish to see the entire score matrix,
 	 for debug purposes, define DEBUGMATRIX. */
-#ifdef DEBUGMATRIX
+	#ifdef DEBUGMATRIX
 	printMatrix(seqA, seqB, scoreMatrix, sizeA, sizeB);
-#endif
+	#endif
 
 	//print score
 	printf("\nScore: %d\n", score);
 
 	//free score matrix
-	freeScoreMatrix(scoreMatrix, sizeB);
+	//freeScoreMatrix(scoreMatrix, sizeB);
 	time = omp_get_wtime() - time;
 	printf("Tempo de Execução: %f\n", time);
 	return EXIT_SUCCESS;

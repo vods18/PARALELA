@@ -83,11 +83,10 @@ void initScoreMatrix(mtype ** scoreMatrix, int sizeA, int sizeB) {
 		scoreMatrix[i][0] = 0;
 }
 
-int LCS(mtype ** scoreMatrix, int sizeA, int sizeB, char * seqA, char *seqB) {
-	int i, j;
+int LCS(mtype ** scoreMatrix, int sizeA, int sizeB, char * seqA, char *seqB, int i, int j) {
 	
-	#pragma parallel for private(sizeB, sizeA, i, j)
-	for (i = 1; i < sizeB + 1; i++) {
+	#pragma omp parallel for private(sizeB, sizeA)
+	for (i = 1; i < sizeB +1; i++) {
 		
 		for (j = 1; j < sizeA + 1; j++) {
 			if (seqA[j - 1] == seqB[i - 1]) {
@@ -139,6 +138,7 @@ void printMatrix(char * seqA, char * seqB, mtype ** scoreMatrix, int sizeA,
 void freeScoreMatrix(mtype **scoreMatrix, int sizeB) {
 	int i;
 	
+	#pragma omp for
 	for (i = 0; i < (sizeB + 1); i++)
 		free(scoreMatrix[i]);
 	free(scoreMatrix);
@@ -163,15 +163,15 @@ int main(int argc, char ** argv) {
 
 	// allocate LCS score matrix
 	 
-	mtype ** scoreMatrix = allocateScoreMatrix(sizeA, sizeB);
-
+	mtype ** scoreMatrix = allocateScoreMatrix(sizeA/2, sizeB/2);
+	mtype ** scoreMatrix2 = allocateScoreMatrix(sizeA/2, sizeB/2);
 	//initialize LCS score matrix
-	initScoreMatrix(scoreMatrix, sizeA, sizeB);
-
+	initScoreMatrix(scoreMatrix, sizeA/2, sizeB/2);
+	initScoreMatrix(scoreMatrix2, sizeA/2, sizeB/2);
 	//fill up the rest of the matrix and return final score (element locate at the last line and collumn)
 		
-	mtype score = LCS(scoreMatrix, sizeA, sizeB, seqA, seqB);
-	
+	mtype score = LCS(scoreMatrix, sizeA/2, sizeB/2, seqA, seqB, 0, 0);
+	mtype score2 = LCS(scoreMatrix2, sizeA, sizeB, seqA, seqB, sizeA/2, sizeB/2);
 	/* if you wish to see the entire score matrix,
 	 for debug purposes, define DEBUGMATRIX. */
 #ifdef DEBUGMATRIX
@@ -179,7 +179,7 @@ int main(int argc, char ** argv) {
 #endif
 
 	//print score
-	printf("\nScore: %d\n", score);
+	printf("\nScore: %d\n", score+score2);
 
 	//free score matrix
 	freeScoreMatrix(scoreMatrix, sizeB);
