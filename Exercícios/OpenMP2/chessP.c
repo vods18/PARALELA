@@ -79,44 +79,39 @@ int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
     int x2, y2, i, result = 0, result1 = 0, result2 = 0, result3 = 0;
     if (jogada == N*M)
         return 1;
-    /*else if (jogada == (N*M)/2){
+    else if (jogada == (N*M)/0.4){
         x2 = proximo_movimento_x(x,i);
         y2 = proximo_movimento_y(y,i);
         if (jogada_valida(x2,y2, tabuleiro)){
-                    tabuleiro[x2][y2] = jogada+1;
-                    if(passeio_cavalo(tabuleiro, x2,y2, jogada+1))
-                        return 1;
-                    //tabuleiro[x2][y2] = 0;
-                    }
+            tabuleiro[x2][y2] = jogada+1;
+            if(passeio_cavalo(tabuleiro, x2,y2, jogada+1))
+                return 1;
+            tabuleiro[x2][y2] = 0;
     }
-    else{*/
-        
-            for (i=1;i<9;i++){
-                    // #pragma omp task shared(x2)
-                    //{
-                    //x2 = proximo_movimento_x(x,i);
-                    y2 = proximo_movimento_y(y,i);
-                    #pragma omp parallel
-                    {
-                        if (jogada_valida(x2,y2, tabuleiro)){
-                            tabuleiro[x2][y2] = jogada+1;
-                                    
-                            #pragma omp single
-                            {
-                                #pragma omp task firstprivate(x,y) depend(out: result)
-                                    result = passeio_cavalo(tabuleiro, x2,y2, jogada+1);
 
-                                    //printf("%i\n", jogada+1);
-                            }
-                            if (!result){
-                                tabuleiro[x2][y2] = 0;
-                            }
+    }
+    else{
+        for (i=1;i<9;i++){
+        x2 = proximo_movimento_x(x,i);
+        y2 = proximo_movimento_y(y,i);
+            if (jogada_valida(x2,y2, tabuleiro)){
+                tabuleiro[x2][y2] = jogada+1;
                         
-                        }
-                    }
+                    #pragma omp task shared(x2,y2)
+                    omp_get_thread_num();
+                    //printf("%i ", omp_get_thread_num());
+                    //printf("\n");
+                    result = passeio_cavalo(tabuleiro, x2,y2, jogada+1);
+                        //printf("%i\n", jogada+1);
+                
+                #pragma omp taskwait
+                if (!result){
+                    tabuleiro[x2][y2] = 0;
                 }
-    
-    return (result + result1 + result2 + result3) > 0;
+            }
+        }
+    }
+    return result; 
 }
 
 int main(){
@@ -134,10 +129,16 @@ int main(){
             tabuleiro[i][j] = 0;
 
     tabuleiro[x_inicio][y_inicio] = 1;
-    if(passeio_cavalo(tabuleiro, x_inicio, y_inicio, 1))
-        print_tabuleiro(tabuleiro);
-    else
-        printf("Nao existe solucao\n");
+    #pragma omp parallel
+    {
+        #pragma omp single
+        {
+            if(passeio_cavalo(tabuleiro, x_inicio, y_inicio, 1))
+                print_tabuleiro(tabuleiro);
+            else
+                printf("Nao existe solucao\n");
+        }
+    }
     end = clock();
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     printf("%f seconds\n",cpu_time_used);

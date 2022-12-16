@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define N 5
+#define N 6
 #define M 6
 
 void print_tabuleiro(int tabuleiro[N][M]){
