@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <omp.h>
 
-#define N 5
-#define M 5
+#define N 7
+#define M 7
 
 void print_tabuleiro(int tabuleiro[N][M]){
     int i, j;
@@ -75,16 +76,23 @@ int proximo_movimento_x(int x, int movimento){
     else 
         return x - 2;
 }
-int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
+int passeio_cavalo(clock_t start, clock_t end, int tabuleiro[N][M], int x, int y, int jogada){
     int x2, y2, i, result = 0, result1 = 0, result2 = 0, result3 = 0;
-    if (jogada == N*M)
-        return 1;
+    double cpu_time_used;
+    if (jogada == N*M){
+        print_tabuleiro(tabuleiro);
+        end = clock();
+        cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+        printf("%f seconds\n",cpu_time_used);
+        exit(0);
+    }
+        // return 1;
     else if (jogada == (N*M)/0.4){
         x2 = proximo_movimento_x(x,i);
         y2 = proximo_movimento_y(y,i);
         if (jogada_valida(x2,y2, tabuleiro)){
             tabuleiro[x2][y2] = jogada+1;
-            if(passeio_cavalo(tabuleiro, x2,y2, jogada+1))
+            if(passeio_cavalo(start, end, tabuleiro, x2,y2, jogada+1))
                 return 1;
             tabuleiro[x2][y2] = 0;
     }
@@ -98,20 +106,21 @@ int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
                 tabuleiro[x2][y2] = jogada+1;
                         
                     #pragma omp task shared(x2,y2)
-                    omp_get_thread_num();
+                    // omp_get_thread_num();
                     //printf("%i ", omp_get_thread_num());
                     //printf("\n");
-                    result = passeio_cavalo(tabuleiro, x2,y2, jogada+1);
+                    result = passeio_cavalo(start, end, tabuleiro, x2,y2, jogada+1);
                         //printf("%i\n", jogada+1);
                 
-                #pragma omp taskwait
+                //#pragma omp taskwait
                 if (!result){
                     tabuleiro[x2][y2] = 0;
                 }
             }
-        }
+        }        
     }
-    return result; 
+
+    //return result; 
 }
 
 int main(){
@@ -119,7 +128,6 @@ int main(){
     int tabuleiro[N][M];
     int x_inicio = 0, y_inicio = 0;
     clock_t start, end;
-    double cpu_time_used;
     start = clock();
     
     printf("Resolvendo para N=%d e M=%d\n",N,M);
@@ -133,13 +141,11 @@ int main(){
     {
         #pragma omp single
         {
-            if(passeio_cavalo(tabuleiro, x_inicio, y_inicio, 1))
+            if(passeio_cavalo(start, end, tabuleiro, x_inicio, y_inicio, 1))
                 print_tabuleiro(tabuleiro);
             else
                 printf("Nao existe solucao\n");
         }
     }
-    end = clock();
-    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("%f seconds\n",cpu_time_used);
+    
 }
