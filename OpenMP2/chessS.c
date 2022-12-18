@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 
-#define N 5
-#define M 5
 
-void print_tabuleiro(int tabuleiro[N][M]){
+void print_tabuleiro(int N, int M, int tabuleiro[N][M]){
     int i, j;
     for (i=0; i < N; i++){
         for (j=0; j < M; j++)
@@ -13,7 +11,7 @@ void print_tabuleiro(int tabuleiro[N][M]){
     }
 }
 
-int jogada_valida(int x, int y, int tabuleiro[N][M]){
+int jogada_valida(int N, int M, int x, int y, int tabuleiro[N][M]){
     if (x < 0  || x >= N || y < 0 || y >= M)
         return 0;
     if(tabuleiro[x][y] != 0)
@@ -74,7 +72,7 @@ int proximo_movimento_x(int x, int movimento){
     else 
         return x - 2;
 }
-int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
+int passeio_cavalo(int N, int M, int tabuleiro[N][M], int x, int y, int jogada){
     int x2, y2, i;
     if (jogada == N*M)
         return 1;
@@ -82,9 +80,9 @@ int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
     for (i=1;i<9;i++){
         x2 = proximo_movimento_x(x,i);
         y2 = proximo_movimento_y(y,i);
-        if (jogada_valida(x2,y2, tabuleiro)){
+        if (jogada_valida(N, M, x2,y2, tabuleiro)){
             tabuleiro[x2][y2] = jogada+1;
-            if (passeio_cavalo(tabuleiro, x2,y2, jogada+1))
+            if (passeio_cavalo(N, M, tabuleiro, x2,y2, jogada+1))
                 return 1;
             tabuleiro[x2][y2] = 0;
         }
@@ -94,13 +92,22 @@ int passeio_cavalo(int tabuleiro[N][M], int x, int y, int jogada){
 }
 
 int main(){
-    int i, j;
-    int tabuleiro[N][M];
-    int x_inicio = 0, y_inicio = 0;
+    int i, j, N, M, num_threads, erro;
+    int x_inicio, y_inicio;
     clock_t start, end;
     double cpu_time_used;
     start = clock();
     
+    printf("Quantas threads devem ser usadas?\n");
+    erro = scanf("%i", num_threads);
+
+    printf("Qual o tamanho do tabuleiro?\n");
+    erro = scanf("%i %i", &N, &M);
+    int tabuleiro[N][M];
+    
+    printf("Onde o cavalo deve iniciar?\n");
+    erro = scanf("%i %i", &x_inicio, &y_inicio);
+
     printf("Resolvendo para N=%d e M=%d\n",N,M);
 
     for (i=0; i < N; i++)
@@ -109,8 +116,8 @@ int main(){
 
     tabuleiro[x_inicio][y_inicio] = 1;
 
-    if (passeio_cavalo(tabuleiro, x_inicio, y_inicio, 1))
-        print_tabuleiro(tabuleiro);
+    if (passeio_cavalo(N, M, tabuleiro, x_inicio, y_inicio, 1))
+        print_tabuleiro(N, M, tabuleiro);
     else
         printf("Nao existe solucao\n");
     end = clock();
