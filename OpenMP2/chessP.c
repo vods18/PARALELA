@@ -118,39 +118,40 @@ int passeio_cavalo(int N, int M, clock_t start, clock_t end, int tabuleiro[N][M]
     return result; 
 }
 
-int main(){
+int main(int argc, char*argv[]){
     int i, j, N, M, num_threads, erro;
     int x_inicio, y_inicio;
-    clock_t start, end;
+    clock_t start, start2, end, end2;
+    double cpu_time_used;
     start = clock();
-    
-    //printf("Quantas threads devem ser usadas?\n");
-    //erro = scanf("%i", &num_threads);
-
-    printf("Qual o tamanho do tabuleiro?\n");
-    erro = scanf("%i %i", &N, &M);
-
-    printf("Onde o cavalo deve iniciar?\n");
-    erro = scanf("%i %i", &x_inicio, &y_inicio);
-    
+    start2 = clock();
+    N = atoi(argv[1]);
+    M = atoi(argv[2]);
     int tabuleiro[N][M];
+    
+    x_inicio = atoi(argv[3]);
+    y_inicio = atoi(argv[4]);
+    
     printf("Resolvendo para N=%d e M=%d\n",N,M);
-
-    #pragma omp parallel for
+   
     for (i=0; i < N; i++){
-        #pragma omp parallel for
+       
         for (j=0; j < M; j++){
             tabuleiro[i][j] = 0;
         }
     }
 
     tabuleiro[x_inicio][y_inicio] = 1;
+    end2 = clock();
+    cpu_time_used = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
+
+    printf("%f sequencial seconds\n",cpu_time_used);
     #pragma omp parallel
      {
         #pragma omp single nowait
         {
-            if(passeio_cavalo(N, M, start, end, tabuleiro, x_inicio, y_inicio, 1))
-                print_tabuleiro(N, M, tabuleiro);
+            if(passeio_cavalo(N, M, start, end, tabuleiro, x_inicio, y_inicio, 1)){}
+            
             else
                 printf("Nao existe solucao\n");
         }

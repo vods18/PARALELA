@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-
+#include <stdlib.h>
 
 void print_tabuleiro(int N, int M, int tabuleiro[N][M]){
     int i, j;
@@ -91,22 +91,20 @@ int passeio_cavalo(int N, int M, int tabuleiro[N][M], int x, int y, int jogada){
     return 0;
 }
 
-int main(){
+int main(int argc, char*argv[]){
     int i, j, N, M, num_threads, erro;
     int x_inicio, y_inicio;
     clock_t start, end;
     double cpu_time_used;
     start = clock();
     
-    printf("Quantas threads devem ser usadas?\n");
-    erro = scanf("%i", num_threads);
-
-    printf("Qual o tamanho do tabuleiro?\n");
-    erro = scanf("%i %i", &N, &M);
+    N = atoi(argv[1]);
+    M = atoi(argv[2]);
     int tabuleiro[N][M];
     
-    printf("Onde o cavalo deve iniciar?\n");
-    erro = scanf("%i %i", &x_inicio, &y_inicio);
+    x_inicio = atoi(argv[3]);
+    y_inicio = atoi(argv[4]);
+    
 
     printf("Resolvendo para N=%d e M=%d\n",N,M);
 
