@@ -1,3 +1,6 @@
+//GRR20185174 - Luzia Millena Santos Silva
+//GRR20182592 - Vinícius Oliveira dos Santos
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
