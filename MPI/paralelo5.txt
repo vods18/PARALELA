@@ -1,0 +1,423 @@
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.035101
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039131
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042700
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040560
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039318
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042528
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039705
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040983
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.041371
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040827
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040953
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.038527
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.041893
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042303
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042226
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040251
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036275
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.033959
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.041901
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.043835
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.045109
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042442
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.043706
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.043215
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.044439
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040940
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.045076
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.045847
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.043042
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042105
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.044987
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042585
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039578
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.041779
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.043944
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.041139
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040792
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.034294
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036345
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039311
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039937
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039153
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036699
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036528
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036679
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042079
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.036793
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+seconds: 0.040045
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.038618
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.042075
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.037948
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039852
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.037638
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.040285
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.034359
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.039456
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
+janela 2 - max: 25.000000, min: 20.000000, media: 22.825000
+janela 6 - max: 99.900000, min: 3.000000, media: 30.550000
+tamanho da serie: 10, tamanho da janela: 4
+serie total - max: 99.900000, min: 3.000000, media: 23.900000
+janela 0 - max: 25.000000, min: 10.000000, media: 17.625000
+janela 4 - max: 23.400000, min: 3.000000, media: 14.900000
+seconds: 0.037057
+janela 1 - max: 25.000000, min: 15.500000, media: 20.975000
+janela 5 - max: 22.900000, min: 3.000000, media: 11.300000
+janela 3 - max: 25.000000, min: 10.300000, media: 20.400000
